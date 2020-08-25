@@ -14,7 +14,7 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-/**
+/**...............
  * 
  * @author NaveenKhunteta
  *
@@ -62,6 +62,7 @@ public class BasePage {
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
 		driver.get(prop.getProperty("url"));
+		System.out.println("bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb");
 
 		return driver;
 	}
